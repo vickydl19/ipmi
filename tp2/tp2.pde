@@ -7,11 +7,11 @@ int yTexto2, yTexto3, xTexto4;
 int velTexto2, velTexto3, velTexto4;
 PFont miFuente;
 int contador4 = 0; // Contador para el tiempo en pantalla 4
-boolean texto4Visible = false; // Bandera para verificar si el texto está completamente visible
+boolean texto4Visible = false; 
 
 void setup() {
   size(640, 480);
-  frameRate(60); // Ajusta la velocidad de fotogramas a 60 para una animación más suave
+  frameRate(60); // Ajusta la velocidad de fotogramas a 60
   panda1 = loadImage("panda1.jpg");
   panda2 = loadImage("panda2.jpg");
   panda3 = loadImage("panda3.jpg");
@@ -22,8 +22,8 @@ void setup() {
   xTexto4 = -100;
   
   velTexto2 = -1; // Reducir la velocidad del texto en pantalla 2
-  velTexto3 = 1;  // Reducir la velocidad del texto en pantalla 3
-  velTexto4 = 1;  // Mantener la velocidad del texto en pantalla 4
+  velTexto3 = 1;  // pantalla 3
+  velTexto4 = 1;  // pantalla 4
   
   miFuente = createFont("Hey Comic.ttf", 32);
   textFont(miFuente);
@@ -37,7 +37,7 @@ void draw() {
     textSize(32);
     textAlign(CENTER, CENTER);
     
-    // Botón
+    // Botón de la pantalla inicial
     if (mouseX > 130 && mouseX < 230 && mouseY > 285 && mouseY < 335) {
       fill(255, 255, 0);
     } else {
@@ -66,7 +66,7 @@ void draw() {
   } else if (estado.equals("pantalla3")) {
     // Contenido de la pantalla 3
     image(panda3, 0, 0, 640, 480);
-    // Dibujar contenido adicional para la pantalla 3
+    // pantalla 3
     fill(255);
     textSize(24);
     textAlign(CENTER, CENTER);
@@ -81,7 +81,7 @@ void draw() {
   } else if (estado.equals("pantalla4")) {
     // Contenido de la pantalla 4
     image(panda4, 0, 0, 640, 480);
-    // Dibujar contenido adicional para la pantalla 4
+    // pantalla 4
     fill(255);
     textSize(24);
     textAlign(CENTER, CENTER);
@@ -97,7 +97,7 @@ void draw() {
         estado = "pantalla5"; // Cambiar a la pantalla 5
         xTexto4 = -100; // Restaura la posición inicial del texto al cambiar de pantalla
         contador4 = 0; // Reiniciar el contador
-        texto4Visible = false; // Reiniciar la bandera
+        texto4Visible = false; 
       }
     }
     text("La película fusiona hábilmente la comedia, \n la acción y la emotividad, ofreciendo \n un mensaje inspirador sobre \n el valor de ser uno mismo y la importancia \n del trabajo en equipo y la amistad.", xTexto4, height / 2);
