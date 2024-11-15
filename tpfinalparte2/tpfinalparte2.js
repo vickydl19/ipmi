@@ -18,3 +18,9 @@ function setup() {
 function draw() {
   juego.mostrar();  
 }
+
+function keyPressed() {
+  if (key === 'R' || key === 'r') {
+    juego.iniciarJuego(); // Reinicia el juego cuando se presiona 'R'
+  }
+}
