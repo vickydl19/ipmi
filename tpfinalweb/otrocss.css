@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: rgb(93, 159, 192);
+    font-family: Cousine, serif;
+}
+
+h1 {
+    background-color: rgb(154, 224, 236);
+    font-family: Sarpanch, sefir;
+    text-align: center;
+    text-decoration: dotted;
+    color: black;
+
+}
+p {
+    text-align: center;
+    font-size: 15px;
+    font-family: Cousine, serif;
+    color: black;
+}
+
+
+.label1 {
+    font-size: 14px;
+    color: gray;
+}
+
+.agrandar {
+    font-size: 20px;
+    font-family: Sarpanch, serif;
+}
+
+.span {
+    font-size: 15px;
+    font-family: Cousine;
+}
+
+.etapas {
+    background-color: rgb(226, 189, 144);
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 30px;
+    text-align: center;
+    font-family: Cousine, serif;
+    color: black;
+}
+
+nav a:hover{
+    color: rgb(42, 42, 139);
+}
+
+.nose{
+    font-size: 10px;
+    
+}
+
+.achicarportada{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achicarfotojuego{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+}
+
+.achicarfotocuento{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+}
+
+.achicarfotoweb{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+}
